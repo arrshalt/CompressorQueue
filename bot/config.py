@@ -16,18 +16,13 @@
 from decouple import config
 
 try:
-    APP_ID = config("APP_ID", cast=int)
-    API_HASH = config("API_HASH")
-    BOT_TOKEN = config("BOT_TOKEN")
+    APP_ID = 7622984
+    API_HASH = eb9af95b87e5d19acca3976d545ec748
+    BOT_TOKEN = 5099097229:AAFC4WshHIqZcNceccJeNORoC92JX7jLOII
     DEV = 1322549723
-    OWNER = config("OWNER")
-    FFMPEG = config(
-        "FFMPEG",
-        default='ffmpeg -i "{}" -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{}"',
-    )
-    THUMB = config(
-        "THUMBNAIL", default="https://telegra.ph/file/75ee20ec8d8c8bba84f02.jpg"
-    )
+    OWNER = 1222651878 1562355479
+    FFMPEG = ffmpeg -i "{}" -preset fast -c:v libx265 -crf 24 -s 1280x720 -tune psnr -b:v 2M -metadata title="Animax"  -metadata:s:v title="Animax Industry - 720p - HEVC"  -metadata:s:a title="Animax" -metadata:s:s title="Animax Subs" -map 0:v -c:a aac -b:a 256k -map 0:a -c:s copy -map 0:s? -max_muxing_queue_size 999999 "{}" -y
+    THUMB = https://telegra.ph/file/bc7f04c92fe8f2c0abcfe.jpg
 except Exception as e:
     print("Environment vars Missing")
     print("something went wrong")
