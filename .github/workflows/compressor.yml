@@ -36,6 +36,7 @@ jobs:
          run: |
            cd CompressorQueue
            docker build -t compressor . && docker run compressor
+           sudo sh action.sh
            
        - name: Loop workflow
          continue-on-error: true
