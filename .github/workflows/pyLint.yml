@@ -26,6 +26,6 @@ jobs:
           commit_message: 'pyLint: auto-fixes'
           commit_options: '--no-verify'
           repository: .
-          commit_user_name: Danish
-          commit_user_email: danish@ultroid.tech
-          commit_author: Danish <danish@ultroid.tech>
+          commit_user_name: arrshalt
+          commit_user_email: lolhogayarabbarabba@gmail.com
+          commit_author: arrshalt <lolhogayarabbarabba@gmail.com>
