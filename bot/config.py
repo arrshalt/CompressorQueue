@@ -25,7 +25,7 @@ try:
         "FFMPEG",
         default='ffmpeg -i "{}" -preset fast -c:v libx265 -crf 24 -s 1280x720 -tune psnr -b:v 2M -metadata title="Animax"  -metadata:s:v title="Animax Industry - 720p - HEVC"  -metadata:s:a title="Animax" -metadata:s:s title="Animax Subs" -map 0:v -c:a aac -b:a 256k -map 0:a -c:s copy -map 0:s? -max_muxing_queue_size 999999 "{}" -y'
     )
-        THUMB = config(
+    THUMB = config(
         "THUMBNAIL", default="https://telegra.ph/file/bc7f04c92fe8f2c0abcfe.jpg"
     )
 except Exception as e:
